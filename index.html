@@ -1,99 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Template</title>
     <style>
-        body {
-            padding: 0;
-            margin: 0;
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      #bodyTable {
+        max-width: 600px;
+      }
+      #companylogo {
+        height: 80px;
+      }
+      #brandicon {
+          height: 150px;
         }
+        #play {
+            height: 200px;
+        }
+      @media only screen and (max-width: 640px) {
+        #companylogo {
+          height: 40px;
+        }
+        #brandicon {
+          height: 100px;
+        }
+        #play {
+            height: 100px;
+        }
+      }
     </style>
-</head>
-<body>
-    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
-    <tr>
+  </head>
+  <body>
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      height="100%"
+      width="100%"
+      align="center"
+      id="bodyTable"
+    >
+      <tr>
         <td align="center" valign="top">
-            <table border="0" cellpadding="0" cellspacing="0" width="600" id="emailContainer">
-                <tr>
-                    <td align="center" valign="top">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailHeader">
-                            <tr>
-                                <td valign="top" bgcolor="#000">
-                                    <image src="https://drive.google.com/file/d/1-UppiBu1-UeY1KFm_icqyMCzKYqqWLJG/view?usp=sharing" alt="company logo" style="height:50px;float:right; margin-right: 20px; padding: 10px" />
-                                </td>
-                            </tr>
-                        </table>
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            id="emailContainer"
+          >
+            <tr>
+              <td align="center" valign="top">
+                <table
+                  border="0"
+                  cellpadding="10"
+                  cellspacing="0"
+                  width="100%"
+                  id="emailHeader"
+                >
+                  <tr>
+                    <td valign="top" bgcolor="#000">
+                      <image
+                        src="https://raw.githubusercontent.com/sushilkundu143/emailtemplate/master/assets/logo.png"
+                        id="companylogo"
+                        alt="company logo"
+                        style="float: right; margin-right: 20px; padding: 10px"
+                      />
                     </td>
-                </tr>
-                <tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="10"
+                  width="100%"
+                  id="emailHeaderItem"
+                >
+                  <tr>
                     <td align="center" valign="top">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailHeaderItem">
-                            <tr>
-                                <td align="center" valign="top">
-                                   <image src="https://drive.google.com/file/d/1yCsCm4DWGR4-VLaUZYH2bsIh2mu7XMWq/view?usp=sharing" alt="brand icon" style="height:150px;float:left;margin-top:10px" />
-                                </td>
-                            </tr>
-                        </table>
+                      <image
+                        src="https://raw.githubusercontent.com/sushilkundu143/emailtemplate/master/assets/1.png"
+                        alt="brand icon"
+                        id="brandicon"
+                        style="float: left; margin-top: 10px"
+                      />
                     </td>
-                </tr>
-                <tr>
-                    <td align="center" valign="top">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailBody">
-                            <tr>
-                                <td  valign="top">
-                                    <br/>
-                                    <span>Hi Sushil Kundu,</span>
-                                    <br/>
-                                    <br/>
-                                        <span>
-                                        With great pleasure we would like to inform you that you have been selected for the role of Frontend Lead - III with Codvo.ai. Congratulations!
-                                        </span>
-                                        <br />
-                                         <br />
-                                        <span>
-                                        Download the Life@X app to setup your account, access your offer letter, and get started on an amazing journey with us.
-                                    </span>
-                                         <br />
-                                         <br />
-                                        <span>
-                                        Once again, the whole team extends their congratulations and look forward to welcoming you onboard.
-                                        </span>
-                                         <br/>
-                                         <br />
-                                        <span>
-                                        If you have any questions, please feel free to reach out to us at any time at hr@codvo.ai. We’ll be more than happy to help you.
-                                    </span>
-                                        <br/> 
-                                        <br />
-                                        <span>
-                                        Thank you!
-                                    </span>
-                                </td>
-                            </tr>
-                        </table>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table
+                  border="0"
+                  cellpadding="10"
+                  cellspacing="0"
+                  width="100%"
+                  id="emailBody"
+                >
+                  <tr>
+                    <td valign="top">
+                      <br />
+                      <span>Hi Sushil Kundu,</span>
+                      <br />
+                      <br />
+                      <span>
+                        With great pleasure we would like to inform you that you
+                        have been selected for the role of Frontend Lead - III
+                        with Codvo.ai. Congratulations!
+                      </span>
+                      <br />
+                      <br />
+                      <span>
+                        Download the Life@X app to setup your account, access
+                        your offer letter, and get started on an amazing journey
+                        with us.
+                      </span>
+                      <br />
+                      <br />
+                      <span>
+                        Once again, the whole team extends their congratulations
+                        and look forward to welcoming you onboard.
+                      </span>
+                      <br />
+                      <br />
+                      <span>
+                        If you have any questions, please feel free to reach out
+                        to us at any time at hr@codvo.ai. We’ll be more than
+                        happy to help you.
+                      </span>
+                      <br />
+                      <br />
+                      <span> Thank you! </span>
                     </td>
-                </tr>
-                <tr>
-                    <td align="center" valign="top">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailFooter">
-                            <tr>
-                                <td  valign="top">
-                                    <img src="https://drive.google.com/file/d/1GK6lw0E8aXtLkExuL6gBQjZL93LdhUIW/view?usp=sharing" atl="Google Play" style="height: 150px;" />
-                                    <img src="https://drive.google.com/file/d/1J6iqGoarzf9haUhFjYvHrmOW9o0Q-RbX/view?usp=sharing" atl="Apple Play" style="height: 150px;" />
-                                </td>
-                                <td  valign="top" style="text-align: center;">
-                                    <img  src="https://drive.google.com/file/d/1fQJH_ww5_dHjG0WQJNfZtSJKPh5rjHSj/view?usp=sharing" atl="Google Play" style="height: 200px;" />
-                                </td>
-                            </tr>
-                        </table>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table
+                  border="0"
+                  cellpadding="10"
+                  cellspacing="0"
+                  width="100%"
+                  id="emailFooter"
+                >
+                  <tr>
+                    <td valign="top">
+                      <img
+                        src="https://raw.githubusercontent.com/sushilkundu143/emailtemplate/master/assets/google.png"
+                        atl="Google Play"
+                        style="height: 150px"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/sushilkundu143/emailtemplate/master/assets/apple.png"
+                        atl="Apple Play"
+                        style="height: 150px"
+                      />
                     </td>
-                </tr>
-            </table>
+                    <td valign="top" style="text-align: center">
+                      <img
+                        src="https://raw.githubusercontent.com/sushilkundu143/emailtemplate/master/assets/2.png"
+                        atl="play"
+                        id="play"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
         </td>
-    </tr>
-</table>
-</body>
+      </tr>
+    </table>
+  </body>
 </html>
